@@ -62,7 +62,7 @@ public class Watch {
   private long priceInCents;
 
   @Column(nullable = false, length = 600)
-  private String urlImage;
+  private String imageUrl;
 
   @Column(nullable = false)
   private Instant createdAt;
@@ -83,7 +83,7 @@ public class Watch {
     if (brand != null) brand = brand.trim();
     if (model != null) model = model.trim();
     if (reference != null) reference = reference.trim();
-    if (urlImage != null) urlImage = urlImage.trim();
+    if (imageUrl != null) imageUrl = imageUrl.trim();
   }
 
 }
