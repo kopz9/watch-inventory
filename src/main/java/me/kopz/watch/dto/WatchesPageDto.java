@@ -1,6 +1,8 @@
 package me.kopz.watch.dto;
 
-public record WatchsPageDto(
+import java.util.List;
+
+public record WatchesPageDto(
     List<WatchDTO> items,
     long total
 ) {

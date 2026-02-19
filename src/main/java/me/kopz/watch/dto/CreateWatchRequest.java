@@ -13,6 +13,8 @@ public record CreateWatchRequest(
     @NotBlank String boxMaterial,
     @NotBlank String glassType,
 
+    @Min(0) int waterResistanceM,
+
     @Min(20)int diameterMm,
     @Min(20) int lugToLugMm,
     @Min(5) int thicknessMm,

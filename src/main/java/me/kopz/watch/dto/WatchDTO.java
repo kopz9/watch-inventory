@@ -1,7 +1,10 @@
 package me.kopz.watch.dto;
 
+import lombok.Builder;
+
 import java.util.UUID;
 
+@Builder
 public record WatchDTO(
     UUID id,
     String brand,
