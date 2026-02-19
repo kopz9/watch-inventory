@@ -5,19 +5,10 @@ public enum GlassType {
 
   public static GlassType fromApi(String value) {
     if (value == null || value.isBlank()) return null;
-    return switch (value) {
-      case "mineral" -> MINERAL;
-      case "sapphire" -> SAPPHIRE;
-      case "acrylic" -> ACRYLIC;
-      default -> throw new IllegalArgumentException("Glass type invalid: " + value);
-    };
+    return valueOf(value.toUpperCase());
   }
 
   public String toApi() {
-    return switch (this) {
-      case MINERAL -> "mineral";
-      case SAPPHIRE -> "sapphire";
-      case ACRYLIC -> "acrylic";
-    };
+    return name().toLowerCase();
   }
 }
