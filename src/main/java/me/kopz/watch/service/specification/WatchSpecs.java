@@ -38,7 +38,7 @@ public final class WatchSpecs {
   public static Specification<Watch> brandEquals(String brand) {
     if (blank(brand)) return all();
     String v = brand.trim().toLowerCase();
-    return (root, q, cb) -> cb.equal(cb.lower(root.get(brand)), v);
+    return (root, q, cb) -> cb.equal(cb.lower(root.get("brand")), v);
   }
 
   public static Specification<Watch> movementTypeEquals(MovementType movementType) {
