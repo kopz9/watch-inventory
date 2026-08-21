@@ -15,7 +15,7 @@ REST API for watch inventory control, implemented with Spring Boot, Lombok and t
 - Pagination + search + filters + sorting
 
 
-- CRUD (create / update / delete)
+- CRUD (create / read / update / delete)
 
 
 - Validation + global error handling (@ControllerAdvice)
